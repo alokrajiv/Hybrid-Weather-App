@@ -1,0 +1,12 @@
+<section class="section container-fluid" ng-controller="HomeController as HomeCtrl">
+  <div bs-panel title="{{location}}">
+    <div class="page-header">
+      <h1><small>{{location}}</small></h1>
+    </div>
+    <div>
+      <h3><img ng-src="http://openweathermap.org/img/w/{{icon_code}}.png"><small>{{weather}}</small></h3>
+    </div>
+    <br>
+    <button class="btn btn-primary" ng-click="load()">{{load_status}}</button>
+  </div>
+</section>
